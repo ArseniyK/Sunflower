@@ -25,10 +25,6 @@ try:
 except ImportError:
 	pass
 
-# handle UTF-8 encoded strings while interacting with GTK
-import sys; reload(sys)
-sys.setdefaultencoding('utf-8')
-
 import common
 from config import Config
 from gui.main_window import MainWindow
