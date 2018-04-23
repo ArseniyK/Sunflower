@@ -1712,7 +1712,7 @@ class FileList(ItemList):
 				GLib.idle_add(self._flush_queue, parent)
 
 		except Exception as error:
-			print 'Error: {0} - {1}'.format(filename, str(error))
+			print('Error: {0} - {1}'.format(filename, str(error)))
 
 		return result
 
@@ -2129,7 +2129,7 @@ class FileList(ItemList):
 
 			except Exception as error:
 				# report error first
-				print 'Load directory error: ', error.message
+				print('Load directory error: ', error.message)
 
 				# clear locks and exit
 				self._thread_active.clear()

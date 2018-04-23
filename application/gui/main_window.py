@@ -1153,11 +1153,11 @@ class MainWindow(Gtk.ApplicationWindow):
 					plugin.register_plugin(self)
 
 			except Exception as error:
-				print 'Error: Unable to load plugin "{0}": {1}'.format(file_name, error)
+				print('Error: Unable to load plugin "{0}": {1}'.format(file_name, error))
 
 				# in case plugin is protected, complain and exit
 				if file_name in self.protected_plugins:
-					print '\nFatal error! Failed to load required plugin, exiting!'
+					print('\nFatal error! Failed to load required plugin, exiting!')
 					sys.exit(3)
 
 	def _load_styles(self):
@@ -1896,7 +1896,7 @@ class MainWindow(Gtk.ApplicationWindow):
 				handled = False
 
 		if not handled:
-			print 'Unhandled command: {0}'.format(command[0])
+			print('Unhandled command: {0}'.format(command[0]))
 
 		return True
 
@@ -1947,7 +1947,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
 				else:
 					# print error to console
-					print 'Warning: Unknown plugin class "{0}". Tab skipped!'.format(tab['class'])
+					print('Warning: Unknown plugin class "{0}". Tab skipped!'.format(tab['class']))
 
 			result = count > 0
 
@@ -2530,10 +2530,10 @@ class MainWindow(Gtk.ApplicationWindow):
 		else:
 			# report error to console
 			if name in self.rename_extension_classes:
-				print 'Error: Extension with name "{0}" is already registered!'
+				print('Error: Extension with name "{0}" is already registered!')
 
 			if not issubclass(ExtensionClass, RenameExtension):
-				print 'Error: Invalid object class!'
+				print('Error: Invalid object class!')
 
 	def register_find_extension(self, name, ExtensionClass):
 		"""Register class to be used in find files tool"""
@@ -2545,10 +2545,10 @@ class MainWindow(Gtk.ApplicationWindow):
 		else:
 			# report error to console
 			if name in self.find_extension_classes:
-				print 'Error: Extension with name "{0}" is already registered!'
+				print('Error: Extension with name "{0}" is already registered!')
 
 			if not issubclass(ExtensionClass, FindExtension):
-				print 'Error: Invalid object class!'
+				print('Error: Invalid object class!')
 
 	def register_mount_manager_extension(self, ExtensionClass):
 		"""Register mount manager extension"""

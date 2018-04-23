@@ -10,7 +10,7 @@ try:
 
 except:
 	# print error and die
-	print 'Error starting Sunflower, missing GTK 3.0+'
+	print('Error starting Sunflower, missing GTK 3.0+')
 	sys.exit(1)
 
 else:

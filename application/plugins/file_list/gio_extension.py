@@ -335,7 +335,7 @@ class SambaExtension(GioExtension):
 
 					except KeyringCreateError:
 						# show error message
-						print "Keyring create error, we need it to store this option"
+						print("Keyring create error, we need it to store this option")
 
 					else:
 						# store entry
@@ -343,7 +343,7 @@ class SambaExtension(GioExtension):
 
 				else:
 					# show error message
-					print "Keyring is not available but it's needed!"
+					print("Keyring is not available but it's needed!")
 
 			else:
 				# no login required, just store
@@ -687,7 +687,7 @@ class FtpExtension(GioExtension):
 
 					except KeyringCreateError:
 						# show error message
-						print "Keyring create error, we need it to store this option"
+						print("Keyring create error, we need it to store this option")
 
 					else:
 						# store entry
@@ -695,7 +695,7 @@ class FtpExtension(GioExtension):
 
 				else:
 					# show error message
-					print "Keyring is not available but it's needed!"
+					print("Keyring is not available but it's needed!")
 
 			else:
 				# no login required, just store
@@ -1041,7 +1041,7 @@ class DavExtension(GioExtension):
 
 					except KeyringCreateError:
 						# show error message
-						print "Keyring create error, we need it to store this option"
+						print("Keyring create error, we need it to store this option")
 
 					else:
 						# store entry
@@ -1049,7 +1049,7 @@ class DavExtension(GioExtension):
 
 				else:
 					# show error message
-					print "Keyring is not available but it's needed!"
+					print("Keyring is not available but it's needed!")
 
 			else:
 				# no login required, just store
