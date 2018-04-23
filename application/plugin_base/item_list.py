@@ -4,7 +4,7 @@ import common
 import user
 
 from gi.repository import Gtk, Gdk
-from plugin import PluginBase
+from plugin_base.plugin import PluginBase
 from operation import CopyOperation, MoveOperation
 from accelerator_group import AcceleratorGroup
 from parameters import Parameters

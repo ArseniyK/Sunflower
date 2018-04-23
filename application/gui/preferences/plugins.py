@@ -2,7 +2,7 @@ import os
 import locale
 
 from gi.repository import Gtk
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 from widgets.settings_page import SettingsPage
 
 

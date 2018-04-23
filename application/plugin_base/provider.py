@@ -1,7 +1,7 @@
 import os
 
 from collections import namedtuple
-from monitor import Monitor
+from plugin_base.monitor import Monitor
 
 
 FileInfo = namedtuple(
