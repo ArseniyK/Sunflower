@@ -3,7 +3,7 @@ import fnmatch
 
 from gi.repository import Gtk, GObject
 from threading import Thread, Event
-from Queue import Queue
+from queue import Queue
 
 from gui.input_dialog import OverwriteFileDialog, OverwriteDirectoryDialog, OperationError
 from gui.operation_dialog import CopyDialog, MoveDialog, DeleteDialog, RenameDialog
@@ -11,7 +11,7 @@ from gui.error_list import ErrorList
 from plugin_base.provider import Mode as FileMode, TrashError, Support as ProviderSupport
 from plugin_base.monitor import MonitorSignals
 from common import format_size
-from queue import OperationQueue
+from queues import OperationQueue
 
 # import constants
 from gui.input_dialog import OverwriteOption

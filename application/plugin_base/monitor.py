@@ -1,5 +1,5 @@
 from gi.repository import GObject
-from Queue import Queue, Empty as QueueEmptyException
+from queue import Queue, Empty as QueueEmptyException
 from threading import Event
 
 

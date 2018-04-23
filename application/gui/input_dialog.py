@@ -8,7 +8,7 @@ from gi.repository import Gtk
 from plugin_base.provider import FileType, Support as ProviderSupport
 from common import get_user_directory, UserDirectory
 from widgets.completion_entry import PathCompletionEntry
-from queue import OperationQueue
+from queues import OperationQueue
 
 
 # constants

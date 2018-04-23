@@ -1,7 +1,7 @@
 from gi.repository import Gtk
 
 from threading import Lock
-from Queue import Queue, Empty
+from queue import Queue, Empty
 
 
 class OperationQueue:
