@@ -29,10 +29,10 @@ class OperationDialog:
 		self._size_format_type = self._application.options.get('size_format')
 		self._hide_on_minimize = application.options.section('operations').get('hide_on_minimize')
 
-		self._total_size = 0L
-		self._total_count = 0L
-		self._current_size = 0L
-		self._current_count = 0L
+		self._total_size = 0
+		self._total_count = 0
+		self._current_size = 0
+		self._current_count = 0
 
 		# aggregate speeds to provide accurate time prediction
 		self._speeds = []

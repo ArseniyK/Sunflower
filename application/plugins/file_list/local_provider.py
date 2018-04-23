@@ -86,13 +86,13 @@ class LocalProvider(Provider):
 		except Exception as error:
 			raise TrashError(error)
 
-	def create_file(self, path, mode=0644, relative_to=None):
+	def create_file(self, path, mode=0o644, relative_to=None):
 		"""Create empty file with specified mode set"""
 		real_path = self.real_path(path, relative_to)
 		open(real_path, 'w').close()
 		self.set_mode(real_path, mode)
 
-	def create_directory(self, path, mode=0755, relative_to=None):
+	def create_directory(self, path, mode=0o755, relative_to=None):
 		"""Create directory with specified mode set"""
 		real_path = self.real_path(path, relative_to)
 		os.makedirs(real_path, mode)

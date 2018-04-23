@@ -46,7 +46,7 @@ class ItemList(PluginBase):
 		# list statistics
 		self._dirs = {'count': 0, 'selected': 0}
 		self._files = {'count': 0, 'selected': 0}
-		self._size = {'total': 0L, 'selected': 0L}
+		self._size = {'total': 0, 'selected': 0}
 
 		# preload commonly used options
 		self._size_format = self._parent.options.get('size_format')

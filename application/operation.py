@@ -875,7 +875,7 @@ class CopyOperation(Operation):
 		"""Create specified directory"""
 		source_path = self._source_path if relative_path is None else os.path.join(self._source_path, relative_path)
 		file_stat = self._source.get_stat(directory, relative_to=source_path)
-		mode = file_stat.mode if self._options[Option.SET_MODE] else 0755
+		mode = file_stat.mode if self._options[Option.SET_MODE] else 0o755
 
 		try:
 			# try to create a directory
@@ -952,7 +952,7 @@ class CopyOperation(Operation):
 
 		try:
 			# get file stats
-			destination_size = 0L
+			destination_size = 0
 			file_stat = self._source.get_stat(file_name, relative_to=source_path, extended=True)
 
 			# get file handles

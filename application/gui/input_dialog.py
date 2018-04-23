@@ -201,7 +201,7 @@ class CreateDialog(InputDialog):
 		InputDialog.__init__(self, application)
 
 		self._permission_updating = False
-		self._mode = 0644
+		self._mode = 0o644
 		self._dialog_size = None
 
 		self._container.set_spacing(5)

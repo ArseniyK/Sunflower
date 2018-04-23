@@ -2175,8 +2175,8 @@ class MainWindow(Gtk.ApplicationWindow):
 
 		# create default create file/directory dialog options
 		self.options.create_section('create_dialog').update({
-					'file_mode': 0644,
-					'directory_mode': 0755,
+					'file_mode': 0o644,
+					'directory_mode': 0o755,
 					'edit_file': False
 				})
 

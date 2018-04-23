@@ -2315,7 +2315,7 @@ class FileList(ItemList):
 		self._dirs['selected'] = 0
 		self._files['count'] = 0
 		self._files['selected'] = 0
-		self._size['total'] = 0L
+		self._size['total'] = 0
 		self._size['selected'] = 0
 
 		try:
@@ -2380,7 +2380,7 @@ class FileList(ItemList):
 
 		dirs = 0
 		files = 0
-		size = 0L
+		size = 0
 		result = 0
 
 		for row in self._store:
@@ -2424,7 +2424,7 @@ class FileList(ItemList):
 
 		dirs = 0
 		files = 0
-		size = 0L
+		size = 0
 		result = 0
 
 		for row in self._store:
@@ -2460,7 +2460,7 @@ class FileList(ItemList):
 
 		dirs = 0
 		files = 0
-		size = 0L
+		size = 0
 		result = 0
 
 		for row in self._store:

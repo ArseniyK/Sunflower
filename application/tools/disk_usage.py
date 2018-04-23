@@ -24,8 +24,8 @@ class DiskUsage:
 
 	def __calculate_usage(self, parent_id, monitor_queue, provider, path, stop_event):
 		"""Threaded method used for calculating disk usage."""
-		total_count = 0L
-		total_size = 0L
+		total_count = 0
+		total_size = 0
 		scan_list = []
 
 		# add initial path for scanning
